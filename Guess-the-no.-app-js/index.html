@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess-the-Number</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <h1 class="headline">Guess the number</h1>
+    <hr />
+    <div class="Game-container">
+      <p class="computer-dialogue">
+        I'm thinking of a number between 0 and 100. Can you guess it?
+      </p>
+      <p class="guess-status">You have 0 guesses remaining.</p>
+      <p class="rule-line">Your guess (0-100):</p>
+      <form action="#">
+        <input
+          type="number"
+          name="Number"
+          id="user-guess"
+          min="0"
+          max="100"
+          placeholder="Enter a number"
+          required
+        />
+        <p>Enter a number between 0 and 100</p>
+        <div>
+          <button class="submit-btn">Submit Guess</button>
+          <button type="button" class="new-game-btn" disabled>New Game</button>
+        </div>
+      </form>
+      <div class="result-container">
+        <p class="result"></p>
+        <p class="all-guesses"></p>
+      </div>
+    </div>
+  </body>
+</html>
